@@ -1,3 +1,28 @@
-h1{
-    color: aquamarine;
+/* typography  */
+
+*{
+    font-family: 'Zilla Slab', serif;
+    
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* COVER  */
+
+.cover-img{
+    
+    height: 88vh;
+    background-image: url('https://pixabay.com/get/g85ff2db1b35a7ee7533315b3829d3ba6823bc513b7bd0a426dc23bd5c3922a3e3a171bc78e21928def3e2fc4aef0c1c84f172e2d4f06cae443ca15a329b66160b05dc57c95a901f40c545e9d1d123860_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-subtitle{
+    text-decoration: line-through;
+}
+
+
+
