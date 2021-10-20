@@ -21,9 +21,9 @@
   <body>
     
       <!-- NAVBAR  -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Fourth navbar example">
+      <nav id='navbar' class="navbar navbar-expand-md navbar-light bg-light fixed-top" aria-label="Fourth navbar example">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fas fa-stopwatch fa-3x"></i></a>
+          <a class="navbar-brand" href="#"><i id="navbar-brand"  class="fas fa-stopwatch fa-3x"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,6 +37,7 @@
 
               <li class="nav-item">
                 <a class="nav-link" href="#">Casa e Giardino</a>
+                
               </li>
 
               <li class="nav-item">
@@ -76,13 +77,68 @@
         
         <div class="row cover-img">
           <div class="col-12 d-flex flex-column fs-1 text-center justify-content-center align-items-center">
-            <h1 >PREZTO</h1>
-            <p>Carpe <span class="cover-subtitle">diem</span> l'occasionem.</p>
-
+              <h1>PREZTO</h1>
+              
+              <p class="text-light"><span class="txt-type" data-wait="3000" data-words='["Carpe diem?", "Carpe occasionem!!"]'></span></p>
+              <button type="button" class="btn btn-light pt-2"><h5>Acquista ora</h5></button>
           </div>
         </div>
       </div>
+
+      <!-- CATEGORIE  -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center pt-5 pb-5">
+            <h2>Ricerca per categoria</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROSELLO  -->
+     <div class="row ">
+       <div class="col-8 mx-auto my-auto justify-content-center "> 
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="https://picsum.photos/1200" class="d-block " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="https://picsum.photos/1200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="https://picsum.photos/1200" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+       </div>
+     
+     
+      <!-- <div class="row">
+        <div class="col-12">
+
+          <div class="card" style="width: 20%;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div> -->
       
+      <div style='height: 4000px;'></div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -91,5 +147,6 @@
    <script src="main.js"></script>
     <!-- FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/d25c4f8823.js" crossorigin="anonymous"></script>
+    <!-- SCRIPT STACKOVERFLOW  -->
 </body>
 </html>

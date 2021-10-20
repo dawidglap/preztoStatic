@@ -1,19 +1,40 @@
 /* typography  */
 
+
+
 *{
     font-family: 'Zilla Slab', serif;
+   
     
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* NAVBAR  */
+
+.navbar{
+    transition: 1.5s;
+}
+
+.nav-link{
+    transition: .5s;
+}
+.nav-link:hover{
+    color:rgb(230, 213, 184)!important;
+}
+
+#navbar-brand{
+    transition: 0.8s;
 }
 
 /* COVER  */
 
 .cover-img{
     
-    height: 88vh;
+    height: 100vh;
     background-image: url('https://pixabay.com/get/g85ff2db1b35a7ee7533315b3829d3ba6823bc513b7bd0a426dc23bd5c3922a3e3a171bc78e21928def3e2fc4aef0c1c84f172e2d4f06cae443ca15a329b66160b05dc57c95a901f40c545e9d1d123860_1920.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +43,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .cover-subtitle{
     text-decoration: line-through;
+}
+
+.bg-custom{
+    background: linear-gradient( rgba(201, 141, 141, 0.5), rgba(255,255,255,0.5));
+}
+
+.txt{
+    border-right: 0.15rem solid white;
 }
 
 
