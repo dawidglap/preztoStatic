@@ -23,7 +23,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: .5s;
 }
 .nav-link:hover{
-    color:rgb(230, 213, 184)!important;
+    color:rgb(3, 3, 3)!important;
+    font-weight: 600;
+    
 }
 
 #navbar-brand{
@@ -35,7 +37,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .cover-img{
     
     height: 100vh;
-    background-image: url('https://pixabay.com/get/g85ff2db1b35a7ee7533315b3829d3ba6823bc513b7bd0a426dc23bd5c3922a3e3a171bc78e21928def3e2fc4aef0c1c84f172e2d4f06cae443ca15a329b66160b05dc57c95a901f40c545e9d1d123860_1920.jpg');
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url('https://pixabay.com/get/g85ff2db1b35a7ee7533315b3829d3ba6823bc513b7bd0a426dc23bd5c3922a3e3a171bc78e21928def3e2fc4aef0c1c84f172e2d4f06cae443ca15a329b66160b05dc57c95a901f40c545e9d1d123860_1920.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,6 +88,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 
+.c5{
+    background-image: url('https://cdn.pixabay.com/photo/2013/07/26/15/56/demolition-167738_960_720.jpg');
+}
+
+.c5:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2013/07/26/15/56/demolition-167738_960_720.jpg');
+}
+
+.c6{
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/06/23/25/snow-3066167_960_720.jpg');
+}
+
+.c6:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2018/01/06/23/25/snow-3066167_960_720.jpg');
+}
 
 
 .card-custom{
@@ -106,6 +123,63 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
      
 }
 
+/* BEST DEALS  */
+
+#deals-card{
+    width: 40vw;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.9s;
+}
+
+#deals-card:hover{
+    
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.dc1{
+    background-image: url('https://cdn.pixabay.com/photo/2015/03/24/08/52/beetroot-687251_960_720.jpg');
+
+}
+
+.dc1:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2015/03/24/08/52/beetroot-687251_960_720.jpg');
+   
+
+}
+
+
+.dc2{
+    background-image: url('https://cdn.pixabay.com/photo/2021/03/06/17/10/mjollnir-6074197_960_720.jpg');
+
+}
+
+.dc2:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2021/03/06/17/10/mjollnir-6074197_960_720.jpg');
+  
+
+}
 
 
 
+.dc3{
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/20/21/10/code-3337044_960_720.jpg');
+
+}
+
+.dc3:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2018/04/20/21/10/code-3337044_960_720.jpg');
+  
+}
+
+
+.dc4{
+    background-image: url('https://cdn.pixabay.com/photo/2014/08/10/18/06/beers-414914_960_720.jpg');
+}
+
+.dc4:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2014/08/10/18/06/beers-414914_960_720.jpg'); 
+}

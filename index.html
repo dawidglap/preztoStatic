@@ -36,11 +36,11 @@
               
               
               <li class="nav-item">
-                <a class="nav-link" href="#">Best Deals</a>
+                <a class="nav-link" href="#cat">Categorie</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Categorie</a>
+                <a id="bestDeals"class="nav-link" href="#deals">Best Deals</a>
                 
               </li>
 
@@ -93,7 +93,7 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 text-center pt-5 pb-5">
+          <div class="col-12 text-center mt-5 pt-5 pb-5">
             <h2>Ricerca per categoria</h2>
           </div>
         </div>
@@ -102,43 +102,123 @@
       
 
       <!-- CARD CATEGORIE  -->
-    <div class="row">
-      <div class="col-12 col-md-3">
-        <div class="card c1 card-custom  mt-2 mb-2">
+    <div id="cat" class="row">
+      <div class="col-12 col-md-2 ">
+        <div class="card c1 card-custom  mt-5 mb-5">
         
           <div class="card-body d-flex flex-wrap justify-content-center align-items-center">
-            <h4 class="card-text btn fs-2 fw-bold text-white">Casa e giardino</h4>
+            <h4 class="card-text btn fs-4 fw-bold text-white">Casa e giardino</h4>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-3">
-        <div class="card c2 card-custom  mt-2 mb-2 ">
+      <div class="col-12 col-md-2">
+        <div class="card c2 card-custom  mt-5 mb-5 ">
         
           <div class="card-body d-flex flex-wrap justify-content-center align-items-center">
-            <h4 class="card-text btn fs-2 fw-bold text-white">Usato Fidato</h4>
+            <h4 class="card-text btn fs-4 fw-bold text-white">Usato Fidato</h4>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-3">
-        <div class="card c3 card-custom  mt-2 mb-2">
+      <div class="col-12 col-md-2">
+        <div class="card c3 card-custom mt-5 mb-5">
         
           <div class="card-body d-flex  justify-content-center align-items-center">
-            <h4 class="card-text btn fs-2 fw-bold text-white">Contraffatto Intatto</h4>
+            <h4 class="card-text btn fs-4 fw-bold text-white">Contraffatto Intatto</h4>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-3">
-        <div class="card  c4 card-custom  mt-2 mb-2">
+      <div class="col-12 col-md-2">
+        <div class="card  c4 card-custom  mt-5 mb-5">
         
           <div class="card-body d-flex  justify-content-center align-items-center">
-            <h4 class="card-text btn fs-2 fw-bold text-white">Art Attack</h4>
+            <h4 class="card-text btn fs-4 fw-bold text-white">Art Attack</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2">
+        <div class="card  c5 card-custom  mt-5 mb-5">
+        
+          <div class="card-body d-flex  justify-content-center align-items-center">
+            <h4 class="card-text btn fs-4 fw-bold text-white">Coworking</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2">
+        <div class="card  c6 card-custom  mt-5 mb-5">
+        
+          <div class="card-body d-flex  justify-content-center align-items-center">
+            <h4 class="card-text btn fs-4 fw-bold text-white">Fat Bike</h4>
           </div>
         </div>
       </div>
       
+    </div>
+
+    <!-- SEZIONE BEST DEALS  -->
+
+    <div class="container">
+      <div id="deals"class="row">
+        <div class="col-12 text-center mt-5 pt-5 pb-5">
+          <h2>Best deals</h2>
+      </div>
+    </div>
+
+    <div class="row  ">
+      <div class="col-12 col-md-6">
+        <div id="deals-card" class="card dc1 mt-5 pt-5">
+          <div class="card-body  mt-5 pt-5">
+            <p class="card-text text-white mt-5">BARBABIETOLA</p>
+            <h5 class="card-title text-white ">Cerchi idee per il tuo orto?</h5>
+            <a href="#" id="dealBtn" class="btn btn-light ">Acquista i semi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div id="deals-card" class="card  dc2 mt-5 pt-5">
+          <div class="card-body  mt-5 pt-5">
+            <p class="card-text text-white mt-5">MJIOLLNIR</p>
+            <h5 class="card-title text-white ">Manie di grandezza?</h5>
+            <a href="#" id="dealBtn" class="btn btn-light ">Compra Mjiollnir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div id="deals-card" class="card  dc3 mt-5 pt-5">
+          <div class="card-body  mt-5 pt-5">
+            <p class="card-text text-white mt-5">HACKADEMY</p>
+            <h5 class="card-title text-white ">Vuoi diventare un WebDeveloper?</h5>
+            <a href="#" id="dealBtn" class="btn btn-light ">Iscriviti subito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div id="deals-card" class="card  dc4 mt-5 pt-5">
+          <div class="card-body  mt-5 pt-5">
+            <p class="card-text text-white mt-5">PER-OGNI</p>
+            <h5 class="card-title text-white ">Hai imparato il forEach?</h5>
+            <a href="#" id="dealBtn" class="btn btn-light ">Dimostralo subito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEZIONE REGALO PERFETTO  -->
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center mt-5 pt-5 pb-5">
+          <h2>Il regalo perfetto</h2>
+        </div>
+      </div>
     </div>
       
 
