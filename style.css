@@ -4,7 +4,7 @@
 
 *{
     font-family: 'Zilla Slab', serif;
-   
+  
     
 }
 
@@ -52,6 +52,60 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .txt{
     border-right: 0.15rem solid white;
 }
+
+/* CARDS  */
+.c1{
+    background-image: url('https://cdn.pixabay.com/photo/2014/10/22/16/39/tools-498202_960_720.jpg');
+}
+.c1:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2014/10/22/16/39/tools-498202_960_720.jpg');
+}
+
+.c2{
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/08/11/21/tree-3382808_960_720.jpg');
+}
+.c2:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2018/05/08/11/21/tree-3382808_960_720.jpg');
+}
+
+.c3{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg');
+
+}
+
+.c3:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_960_720.jpg');
+}
+
+.c4{
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/15/06/51/baby-1093759_960_720.jpg');
+}
+
+.c4:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2015/12/15/06/51/baby-1093759_960_720.jpg');
+}
+
+
+
+
+.card-custom{
+    height: 70vh;
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.8s;
+    
+}
+
+.card-custom:hover{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72vh;
+     
+}
+
 
 
 

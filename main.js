@@ -1,3 +1,5 @@
+
+
 let nav = document.querySelector('.navbar')
 let navBrand = document.querySelector('#navbar-brand')
 
@@ -101,5 +103,7 @@ function init(){
     // INIT TYPEWRITER 
     new TypeWriter(txtElement, words, wait);
 }
+
+
 
 
