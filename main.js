@@ -107,3 +107,13 @@ function init(){
 
 
 
+let images = document.querySelectorAll('.img-who')
+
+images.forEach((image, i) => {
+  image.style.transform = ` rotate(${Math.abs(i * 360) / images.length}deg) translate(150px) rotate(-${Math.abs(i * 360) / images.length}deg)`
+})
+
+
+
+
+

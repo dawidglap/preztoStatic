@@ -219,10 +219,50 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     
 }
 
-/* IL TEMA DI PREZTO  */
+/* IL TEAM DI PREZTO  */
 
-#br-line{
-    width:100%;
-    height: 2px;
-    border: 2px solid black
+.box-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    /* border: 2px solid coral; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.img-who{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    border-radius: 15%;
+    transition: 3s;
+}
+
+/* .immagine-box{
+    background-image: url('https://cdn.pixabay.com/photo/2015/03/13/12/03/lego-671593_960_720.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    
+} */
+
+/* // https://cdn.pixabay.com/photo/2015/03/13/12/03/lego-671593_960_720.jpg  /unicorno */
+
+/* https://cdn.pixabay.com/photo/2020/04/21/11/55/superman-5072824_960_720.jpg    superman */
+
+/* https://cdn.pixabay.com/photo/2015/03/15/16/31/lego-674616_960_720.jpg   infermiere  */
+
+/* https://cdn.pixabay.com/photo/2019/12/15/23/29/hulk-4698161_960_720.jpg  hulk  */
+
+/* https://cdn.pixabay.com/photo/2021/01/03/13/51/lego-5884579_960_720.jpg  thor  */
+
+
+
