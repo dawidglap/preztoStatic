@@ -115,5 +115,112 @@ images.forEach((image, i) => {
 
 
 
+// cattura il jason 
+fetch('./annunci.json')
+// adesso rispondi al suo contenuto 
+.then(response => response.json())
+// altra chiamata prendi tutti i dati del json 
+.then(data =>{
+//    adesso scriviamo tutto cio che dobbiamo fare con il nostro annunci.json 
+    
+
+   console.log(data);
+   function setCategoryFilter(){
+
+    let categoriesWrapper = document.querySelector('#categoriesWrapper')
+
+    let categories = Array.from(new Set(data.map(el => el.category)))
+
+    categories.forEach(category => {
+
+        let div = document.createElement('div')
+        div.classList.add('form-check')
+        div.innerHTML = `
+            <input class="form-check-input" type="radio" name="categories" id="${category}" >
+            <label class="form-check-label" for="${category}">
+            ${category}
+            </label>
+        `
+
+        categoriesWrapper.appendChild(div)
+    })
+
+    console.log(categories);
+   }
+   
+   setCategoryFilter()
+
+   function truncateWords(str){
+
+      if(str.length > 10){
+        return  str.split(' ')[0] + '...'
+      } else{
+          return str
+      }
+
+   }
+
+
+   function showCards(array){
+  
+    let cardWrapper = document.querySelector('#cardWrapper')
+
+    cardWrapper.innerHTML = ''
+
+    array.forEach(el => {
+       
+        let div = document.createElement('div')
+        div.classList.add('announcementCard', 'mt-3', 'mb-3')
+        div.innerHTML = `
+        <div class="">
+                    <p class="lead" title="${el.name}">${truncateWords(el.name)}</p>
+                    <p class="lead">${el.price}$</p>
+                </div>
+                    <p class="lead text-center">${el.category}</p>
+                    
+        `
+
+        cardWrapper.appendChild(div)
+
+
+    })
+
+
+
+}
+
+   showCards(data)
+   
+
+   function filterByCategory(){
+     
+      let checkRadio = document.querySelectorAll('.form-check-input')
+      checkRadio.forEach(el =>{
+          el.addEventListener('click' , ()=>{
+
+             if(el.id == 'All'){
+                 showCards(data)
+             } else{
+
+               let filtered = data.filter(element => element.category == el.id)
+
+               showCards(filtered)
+
+             }
+          })
+      })
+
+   }
+
+   filterByCategory()
+
+   
+
+
+
+
+
+})
+
 
 

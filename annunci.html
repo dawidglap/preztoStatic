@@ -46,7 +46,7 @@
             </li>
 
             <li class="nav-item">
-              <a id="bestDeals"class="nav-link" href="./annunci.html">Ultimi Annunci</a>
+              <a id="lastDeals"class="nav-link" href="./annunci.html">Ultimi Annunci</a>
               
             </li>
 
@@ -82,36 +82,83 @@
     </nav>
 
 
-     <!-- IL TEAM DI PREZTO  -->
-    <div class="container-fluid mt-5">
-        <div id="teamPrezto"class="row">
-         <div class="col-12 text-center mt-5 pt-5 pb-5">
-          <h2>Il fantamitico Team</h2>
-         </div>
-        </div>
-    </div>
 
-    <div class="container mt-5">
-        <div class="row vh-100">
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-             
-                <div class="box-img">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/13/12/03/lego-671593_960_720.jpg" alt="unicorno" class="img-fluid img-who">
-                    <img src="https://cdn.pixabay.com/photo/2020/04/21/11/55/superman-5072824_960_720.jpg" alt="superman" class="img-fluid img-who">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/15/16/31/lego-674616_960_720.jpg" alt="infermiere" class="img-fluid img-who">
-                    <img src="https://cdn.pixabay.com/photo/2019/12/15/23/29/hulk-4698161_960_720.jpg" alt="hulk" class="img-fluid img-who">
-                    <img src="https://cdn.pixabay.com/photo/2021/01/03/13/51/lego-5884579_960_720.jpg" alt="thor" class="img-fluid img-who">
-                    
-                  
-                </div>   
+    <div class="container- mt-5 pt-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+
+
+                <h5 class="">Filtra per:</h5>
+               
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <p>#Categoria:</p>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="categoriesWrapper"class="accordion-body">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categories" id="All" checked>
+                                <label class="form-check-label" for="All">
+                                  Tutte le categorie
+                                </label>
+                              </div>
+                              
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <p>#Prezzo:</p>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          
+                            <p>#Nome:</p>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
             </div>
 
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                card
+            <div id="cardWrapper"class="col-12 col-md-2 ">
+                
+
+             <!-- <div class=" card announcementCard">
+                <div class="d-flex justify-content-around">
+                    <p class="lead">Nome</p>
+                    <p class="lead">Prezzo</p>
+                </div>
+                    <p class="lead text-center">Category</p>
+POSSO MODIFICARE QUESTA E USARLA NEL JS
+             </div> -->
+
+
+
             </div>
         </div>
     </div>
-
 
 
     
@@ -180,22 +227,7 @@
       </div>
     </footer>
 </div>
-      
-
-     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script>
-
-      let images = document.querySelectorAll('.img-who')
-
-      images.forEach((image, i) =>{
-
-         image.style.transform = ` 
-           rotate(${Math.abs(i * 360) / images.length}deg) translate(150px)`
-
-      })
-
-    </script> -->
-    
+          
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
